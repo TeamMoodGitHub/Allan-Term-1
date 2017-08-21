@@ -1,0 +1,105 @@
+body {
+	background-color: #f9f9f9;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-default {
+	padding-bottom: 2px;
+	height: 46px;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.navbar-mid {
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+	background-color: white;
+}
+
+.navbar-filler li {
+	float: left;
+}
+
+.navbar-mid {
+	border-left: 2px solid #f2f2f2;
+	padding-left: 0px;
+}
+
+.navbar-mid a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Arial;
+	border-right: 2px solid #f2f2f2;
+}
+
+.navbar-mid a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: pink;
+    transition: width .3s;
+}
+
+.navbar-mid a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.pic-display-main {
+	background-color: #f442bf;
+	width: 100%;
+	height: auto;
+
+}
+
+#display-image {
+	position: relative;
+	top: 4px;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+.search-bar-main {
+	padding: 30px 0px;
+
+}
+
+input[type=text] {
+	font-size: 20px;
+	width: 360px;
+	height: 35px;
+	-webkit-transition: width .4s ease-in-out;
+	transition: width .8s ease-in-out;
+	border-radius: 20px;
+
+}
+
+input[type=text]:hover {
+	box-shadow: 0px 0px 10px #888888;
+	outline: 0px;
+	transition: .5s;
+}
+
+input[type=text]:focus {
+	border-color: pink;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input[type=submit] {
+	border-radius: 20px;
+	height: 40px;
+	width: 100px;
+}
+
+.navbar-bottom {
+	
+}

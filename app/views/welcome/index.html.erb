@@ -1,0 +1,43 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-widt, intitial-scale=1">
+	<meta name="description" content="Welcome to Find that Anime, A site to find songs from Anime movies and shows.">
+	<meta name="Allan" content="">
+</head>
+
+<body>
+	<div class="navbar-default">
+		<div class="navbar-filler">
+			<ul class="navbar-mid">
+				<li><a href="INSERT LINK"> Home </a></li>
+				<li><a href="INSERT LINK"> About </a></li>
+				<li><a href="INSERT LINK"> Contact </a></li>
+			</ul>
+		</div> <!-- navbar-filler-->
+	</div> <!-- navbar-default -->
+
+	<div class="pic-display-main" align="center">
+		<%= image_tag("FindThatAnimeRenderLogoMedium.png", :id => "display-image") %>
+
+
+	</div> <!-- pic-header-main -->
+
+	<div class="search-bar-main" align="center">
+		<%= form_tag searches_song_path, method: 'get' do %>
+			<%= text_field_tag(:searchtext) %>
+		<%end %>
+			
+		
+	</div>
+
+	
+
+	<div class="navbar-bottom">
+
+
+	</div>
+
+</body>
+</html>
