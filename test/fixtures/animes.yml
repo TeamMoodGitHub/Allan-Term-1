@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  type: 
+  synopsis: MyText
+  genres: MyString
+  episodes: 1
+  aired: MyString
+  licensors: MyString
+  studios: MyString
+  source: MyString
+  duration: MyString
+  rating: MyString
+  openingtheme: MyText
+  endingtheme: MyText
+  mal: MyString
+
+two:
+  title: MyString
+  type: 
+  synopsis: MyText
+  genres: MyString
+  episodes: 1
+  aired: MyString
+  licensors: MyString
+  studios: MyString
+  source: MyString
+  duration: MyString
+  rating: MyString
+  openingtheme: MyText
+  endingtheme: MyText
+  mal: MyString

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'searches/song'
+  resources :animes
+  get 'anime/index'
 
   
   get 'welcome/index'
