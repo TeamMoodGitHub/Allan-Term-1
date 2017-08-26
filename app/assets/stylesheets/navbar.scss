@@ -1,0 +1,46 @@
+.navbar-default {
+	padding-bottom: 2px;
+	height: 46px;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.navbar-mid {
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+	background-color: white;
+}
+
+.navbar-filler li {
+	float: left;
+}
+
+.navbar-mid {
+	border-left: 2px solid #f2f2f2;
+	padding-left: 0px;
+}
+
+.navbar-mid a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Arial;
+	border-right: 2px solid #f2f2f2;
+}
+
+.navbar-mid a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: pink;
+    transition: width .3s;
+}
+
+.navbar-mid a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
