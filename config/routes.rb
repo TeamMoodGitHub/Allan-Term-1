@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  resources :songs
   resources :animes
   get 'anime/index'
+  get 'song/index'
 
   
   get 'welcome/index'

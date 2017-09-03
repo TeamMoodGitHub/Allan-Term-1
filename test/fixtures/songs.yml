@@ -1,7 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  song: MyString
+  title: MyString
+  author: MyString
+  anime: one
 
 two:
-  song: MyString
+  title: MyString
+  author: MyString
+  anime: two

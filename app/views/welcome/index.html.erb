@@ -7,7 +7,7 @@
 	</div> <!-- pic-header-main -->
 
 	<div class="search-bar-main" align="center">
-		<%= form_tag animes_path, method: 'get' do %>
+		<%= form_tag songs_path, method: 'get' do %>
 		<%= text_field_tag :search, params[:search] %>
 		<%= submit_tag "Search" %>
 		<%end %>

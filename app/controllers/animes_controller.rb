@@ -1,6 +1,7 @@
 class AnimesController < ApplicationController
   before_action :set_anime, only: [:show, :edit, :update, :destroy]
 
+
   # GET /animes
   # GET /animes.json
   def index
@@ -72,4 +73,9 @@ class AnimesController < ApplicationController
     def anime_params
       params.require(:anime).permit(:title, :synopsis, :episodes, :aired, :openingtheme, :endingtheme, :mal, :animetype)
     end
+
+
+
+
+
 end

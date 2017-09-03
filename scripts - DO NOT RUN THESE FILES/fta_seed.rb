@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'active_record'
-require 'rubygems'
 require 'open-uri'
 require 'nokogiri'
 require 'uri'
