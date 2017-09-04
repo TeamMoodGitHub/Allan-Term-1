@@ -5,8 +5,7 @@ class AnimesController < ApplicationController
   # GET /animes
   # GET /animes.json
   def index
-    @animes = Anime.where(["openingtheme LIKE ?", "%#{params[:search]}%"])
-    @animes = @animes + Anime.where(["endingtheme LIKE ?", "%#{params[:search]}%"])
+    @anime = Anime.all
   end
 
   # GET /animes/1
