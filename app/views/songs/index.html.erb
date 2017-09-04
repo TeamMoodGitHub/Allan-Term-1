@@ -1,25 +1,24 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Songs</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @songs.each do |song| %>
+<h1 class="h1"> Welcome to FindThatAnime - Search an anime OP or ED song! </h1>
+<div = class="centermain">
+<h2 class="centermainheader">Songs</h2>
+  <table>
+    <thead>
       <tr>
-        <td><%= song.songtitle %></td>
-        <td><%= song.songartist %></td>
-        <td><%= song.animetitle %></td>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+
+    <tbody>
+      <% @songs.each do |song| %>
+        <tr>
+          <td><%= song.songtitle %></td>
+          <td><%= song.songartist %></td>
+          <td><%= song.animetitle %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
 
 <br>
 
-<%= link_to 'New Song', new_song_path %>

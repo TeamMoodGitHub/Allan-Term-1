@@ -1,0 +1,30 @@
+.centermain {
+	height: 80%;
+	width: 75%;
+	background-color: white;
+	margin: auto;
+	padding:0px;
+	display: block;
+
+
+}
+
+.centermainheader {
+	padding: 0px;
+	margin: 0px;
+}
+
+table {
+	width: 100%;
+}
+
+tr {
+	width: 100%;
+}
+tr:nth-child(even) {
+	background: pink;
+}
+td {
+	margin: 0px;
+	display: block;
+}
