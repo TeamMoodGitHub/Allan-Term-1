@@ -1,8 +1,9 @@
 .centermain {
-	height: 80%;
+	height: 100%;
 	width: 75%;
 	background-color: white;
 	margin: auto;
+	margin-top: 1px;
 	padding:0px;
 	display: block;
 
@@ -15,16 +16,49 @@
 }
 
 table {
+	padding: 0px;
 	width: 100%;
+	outline: 1px solid #dbdbdb;
 }
 
 tr {
 	width: 100%;
 }
+
 tr:nth-child(even) {
-	background: pink;
+	background: white;
+}
+
+tr:nth-child(odd) {
+	background: #f9f9f9;
+}
+
+tr:hover {
+	background: #ffbaf5;
+	transition: .3s;
 }
 td {
 	margin: 0px;
 	display: block;
+	padding: 3px;
+}
+
+.centermainheader {
+	padding-left: 5px;
+	font-family: arial;
+}
+
+.songtitle {
+	font-size: 24px;
+	font-family: Verdana, Arial;
+	color: #ce008d;
+}
+
+.songartist {
+	font-size: 12px;
+	color: #595959;
+}
+
+.animetitle {
+	color: #595959;
 }

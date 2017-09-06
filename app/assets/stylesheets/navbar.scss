@@ -36,11 +36,15 @@
     display: block;
     width: 0;
     height: 2px;
-    background: pink;
+    background: #ff26e2;
     transition: width .3s;
 }
 
 .navbar-mid a:hover::after {
     width: 100%;
     transition: width .3s;
+}
+
+.navbar-mid a:hover {
+	color: #595959
 }
