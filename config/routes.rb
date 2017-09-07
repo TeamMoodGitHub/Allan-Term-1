@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :animes
   get 'anime/index'
   get 'song/index'
+  get 'anime/show'
 
   
   get 'welcome/index'

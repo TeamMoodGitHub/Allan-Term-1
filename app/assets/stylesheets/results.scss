@@ -1,7 +1,6 @@
-.centermain {
+.container {
 	height: 100%;
 	width: 75%;
-	background-color: white;
 	margin: auto;
 	margin-top: 1px;
 	padding:0px;
@@ -61,4 +60,24 @@ td {
 
 .animetitle {
 	color: #595959;
+}
+
+.songtitle a {
+	color: #ce008d;
+	text-decoration: none;
+}
+
+.songtitle a:hover {
+	text-decoration: underline;
+	transition: .2s;
+}
+
+.animetitle a {
+	color: #595959;
+	text-decoration: none;
+}
+
+.animetitle a:hover {
+	text-decoration: underline;
+	transition: .2s;
 }

@@ -1,15 +1,17 @@
 <h1 class="h1"> Welcome to FindThatAnime - Search an anime OP or ED song! </h1>
-<div = class="centermain">
+<div = class="container">
 <h2 class="centermainheader">Songs</h2>
   <table>
 
 
     <tbody>
       <% @songs.each do |song| %>
+        <% @selectedanime = song.anime.id %>
         <tr>
-          <td class="songtitle"><%= song.songtitle %></td>
+          <td class="songtitle"><%= link_to song.songtitle, controller: "animes", action: "show", id: @selectedanime %></td>
+
           <td class="songartist"><%= song.songartist %></td>
-          <td class="animetitle"><%= song.animetitle %></td>
+          <td class="animetitle"> <a href="<%= song.anime.mal %>"><%= song.animetitle %></td>
         </tr>
       <% end %>
     </tbody>
