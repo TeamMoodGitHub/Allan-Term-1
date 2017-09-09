@@ -1,15 +1,40 @@
+<section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">FindThatAnime</h1>
+        <p class="lead text-muted">Everything Anime.</p>
+        <p>
+<div class="row">
+<div class="col">
+	<%= form_tag songs_path, method: 'get' do %>
+    <div class="input-group">
+      <%= text_field_tag 'search', params[:search], placeholder: 'Search for a Song or Artist', class: 'form-control' %>
+      <span class="input-group-btn">
+        <button class="btn btn-secondary" type="button"> <span class="glyphicon glyphicon-search">Search</span></button>
+      </span>
+    <% end %>
+    </div>
+  </div>
+</div>
+      </span>
+        </p>
+      </div>
+    </section>
 
-	<h1 class="h1"> Welcome to FindThatAnime - Search an anime OP or ED song! </h1>
-	<div class="pic-display-main" align="center">
-		<%= image_tag("FindThatAnimeRenderLogoMedium.png", :id => "display-image") %>
-
-
-	</div> <!-- pic-header-main -->
-
-	<div class="search-bar-main" align="center">
-		<%= form_tag songs_path, method: 'get' do %>
-		<%= text_field_tag :search, params[:search] %>
-		<% end %>
-			
-		
-	</div>
+<div class="album text-muted">
+    <div class="container">
+       	<div class="row">
+          	<div class="card">
+            	<%= image_tag("shoto.png", :id=>"Card image cap") %>
+            	<p class="card-text">Search for any Anime opening or ending theme.</p>
+          	</div>
+          	<div class="card">
+            	<img data-src="holder.js/100px280/thumb" alt="Insert Image">
+            	<p class="card-text">Text.</p>
+          	</div>
+          	<div class="card">
+            	<img data-src="holder.js/100px280/thumb" alt="Insert Image">
+            	<p class="card-text">Text.</p>
+          	</div>
+        </div>
+    </div>
+</div>

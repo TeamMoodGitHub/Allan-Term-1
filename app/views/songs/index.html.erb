@@ -1,9 +1,27 @@
 <h1 class="h1"> Welcome to FindThatAnime - Search an anime OP or ED song! </h1>
 <div = class="container">
 <h2 class="centermainheader">Songs</h2>
+
+
+
+
+<div id="divPlayer1"></div>
+
+
+
+
+<div id="carouselButtons">
+    <button id="playButton" type="button" class="btn btn-default btn-xs">
+        <span class="glyphicon glyphicon-play"></span>
+     </button>
+    <button id="pauseButton" type="button" class="btn btn-default btn-xs">
+        <span class="glyphicon glyphicon-pause"></span>
+    </button>
+</div>
+
+
+
   <table>
-
-
     <tbody>
       <% @songs.each do |song| %>
         <% @selectedanime = song.anime.id %>
@@ -12,6 +30,8 @@
 
           <td class="songartist"><%= song.songartist %></td>
           <td class="animetitle"> <a href="<%= song.anime.mal %>"><%= song.animetitle %></td>
+
+
         </tr>
       <% end %>
     </tbody>
@@ -20,3 +40,42 @@
 
 <br>
 
+<script>
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player1;
+      var player2;
+     function onYouTubeIframeAPIReady() {
+        player1 = new YT.Player('divPlayer1', {
+          height: '390',
+          width: '640',
+          videoId: 'M7lc1UVf-VE',
+          events: {
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+
+
+
+$('#playButton').click(function () {
+    $('#homeCarousel').carousel('cycle');
+});
+$('#pauseButton').click(function () {
+    $('#homeCarousel').carousel('pause');
+});
+</script>
