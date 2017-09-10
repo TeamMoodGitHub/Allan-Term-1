@@ -13,24 +13,11 @@
 	padding: 0px;
 	margin: 0px;
 }
-
-table {
-	padding: 0px;
-	width: 100%;
-	outline: 1px solid #dbdbdb;
-}
-
 tr {
-	width: 100%;
+	border: .05rem solid #ce008d;
 }
 
-tr:nth-child(even) {
-	background: white;
-}
 
-tr:nth-child(odd) {
-	background: #e8e8e8;
-}
 
 tr:hover {
 	background: #ffbaf5;

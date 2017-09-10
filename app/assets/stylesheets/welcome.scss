@@ -31,10 +31,10 @@
 }
 
 .card {
+position: fixed;
   float: left;
   width: 33.333%;
-  padding: .75rem;
-  margin-bottom: 2rem;
+
   border: 0;
 }
 
@@ -63,4 +63,13 @@ footer p {
 
 input[type="text"]:focus {
   border-color: #f442e2;
+}
+
+.input-group-btn:hover {
+    color: #f442f1;
+}
+
+.card {
+    margin: 2px;
+    width: 32.9%;
 }
