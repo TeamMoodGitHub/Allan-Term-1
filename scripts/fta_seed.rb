@@ -72,4 +72,4 @@ def test(title, type, synopsis, episodes, aired, opening, ending, mal)
 end
 
 
-seed(site)
+#seed(site)
