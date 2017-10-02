@@ -1,15 +1,5 @@
 <div = class="container">
 <h2 class="centermainheader">Songs</h2>
-
-
-
-
-
-
-
-
-
-
   <table class="table table-striped">
     <tbody>
       <% @songs.each do |song| %>
@@ -26,43 +16,6 @@
     </tbody>
   </table>
 </div>
-
-<br>
-
-
-<script>
-  var tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  var player;
-  function onYouTubePlayerAPIReady() {
-    player = new YT.Player('player', {
-      height: '390',
-      width: '640',
-     loadPlaylist:{
-        listType:'playlist',
-        list:['QWqBFawdvc8','8OqtPNumK-0'],
-        index:parseInt(0),
-        suggestedQuality:'small'
-     },
-      events: {
-        'onReady': onPlayerReady,
-        'onStateChange': onPlayerStateChange
-      }
-    });
-  }
-  function onPlayerReady(event) {
-    event.target.loadPlaylist(['QWqBFawdvc8','8OqtPNumK-0']);
-  }
-  var done = false;
-  function onPlayerStateChange(event) {
-    if (event.data == YT.PlayerState.PLAYING && !done) {
-     // setTimeout(stopVideo, 60000);
-      done = true;
-    }
-  }
-  function stopVideo() {
-    player.stopVideo();
-  }
-</script>
+<div id="infinite-scrolling">
+  <%= will_paginate @songs %>
+</div>

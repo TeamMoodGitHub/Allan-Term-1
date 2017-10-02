@@ -4,9 +4,7 @@ class SongsController < ApplicationController
   # GET /songs
   # GET /songs.json
   def index
-    @songs = Song.where('songtitle LIKE ?', "%#{params[:search]}%")
-    @songs = @songs + Song.where('songartist LIKE ?', "%#{params[:search]}%")
-    @songs = @songs.uniq
+    @songs = Song.where(['songtitle LIKE ? or songartist LIKE ?', "%#{params[:search]}%", "%#{params[:search]}%"]).paginate(page: params[:page])
   end
 
   # GET /songs/1
